@@ -32,7 +32,7 @@ app.use(cors());
 
 app.post("/api/stripe-payment", (req, res) => {
   const stripe = require("stripe")(
-    "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"
+    ""
   );
 
   const { amount, email, token } = req.body;
